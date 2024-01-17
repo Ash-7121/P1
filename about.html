@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'vfq3vqx',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <style>
+        html {
+            background: url(images/aboutbor.JPG) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        p {
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        ul {
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: "fot-seurat-pron", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            padding: 0 20px;
+            
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
     
 </body>
 </html>
